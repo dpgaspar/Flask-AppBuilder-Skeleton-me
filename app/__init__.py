@@ -1,6 +1,8 @@
 import logging
 from flask import Flask
-from flask.ext.appbuilder import SQLA, AppBuilder
+from flask.ext.appbuilder.security.mongoengine.manager import SecurityManager
+from flask.ext.appbuilder import AppBuilder
+from flask_mongoengine import MongoEngine
 
 """
  Logging configuration
@@ -11,8 +13,8 @@ logging.getLogger().setLevel(logging.DEBUG)
 
 app = Flask(__name__)
 app.config.from_object('config')
-db = SQLA(app)
-appbuilder = AppBuilder(app, db.session)
+db = MongoEngine(app)
+appbuilder = AppBuilder(app, security_manager_class=SecurityManager)
 
 
 """

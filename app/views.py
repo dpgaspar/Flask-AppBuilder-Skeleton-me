@@ -1,7 +1,8 @@
-from flask.ext.appbuilder.models.datamodel import SQLAModel
 from flask.ext.appbuilder import ModelView
-from app import appbuilder, db
+from flask.ext.appbuilder.models.mongoengine.interface import MongoEngineInterface
+from app import appbuilder
 
-db.create_all()
-
+"""
+    Define you Views here
+"""
 

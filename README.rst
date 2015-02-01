@@ -1,5 +1,5 @@
-Base Skeleton to start your application using Flask-AppBuilder
---------------------------------------------------------------
+Base Skeleton to start your application using Flask-AppBuilder and MongoEngine
+------------------------------------------------------------------------------
 
 - Install it::
 
