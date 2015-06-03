@@ -8,7 +8,7 @@ Base Skeleton to start your application using Flask-AppBuilder and MongoEngine
 
 - Run it::
 
-	python run.py
+	fabmanager run
 
 
 That's it!!
