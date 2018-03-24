@@ -1,7 +1,7 @@
 import logging
 from flask import Flask
-from flask.ext.appbuilder.security.mongoengine.manager import SecurityManager
-from flask.ext.appbuilder import AppBuilder
+from flask_appbuilder.security.mongoengine.manager import SecurityManager
+from flask_appbuilder import AppBuilder
 from flask_mongoengine import MongoEngine
 
 """
